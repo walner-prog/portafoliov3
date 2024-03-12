@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Your description">
+    <meta name="author" content="Your name">
+
+    <!-- OG Meta Tags to improve the way the post looks when you share the page on Facebook, Twitter, LinkedIn -->
+	<meta property="og:site_name" content="" /> <!-- website name -->
+	<meta property="og:site" content="" /> <!-- website link -->
+	<meta property="og:title" content=""/> <!-- title shown in the actual shared post -->
+	<meta property="og:description" content="" /> <!-- description shown in the actual shared post -->
+	<meta property="og:image" content="" /> <!-- image link, make sure it's jpg -->
+	<meta property="og:url" content="" /> <!-- where do you want your post to link to -->
+	<meta name="twitter:card" content="summary_large_image"> <!-- to have large image post format in Twitter -->
+
+    <!-- Webpage Title -->
+    <title>DEVWEB</title>
+    <!--animaciones -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/izitoast@1.4.0/dist/css/iziToast.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" integrity="sha512-hD9wWc+zpt0l1cYEE0iURjGVzV0vFvJTkmBQThz/iXzv3pB0DVv09R7xRlsNDuO6A8uVJ+R2MLk5dQhQIHFZMg==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" integrity="sha512-dU1/8x7NX8Sk8bd2/uK0Gq5z2lMlnF7qO0TnMzPV2Gg9kxlFWp5ntqGO9buj4x43KwRJpjnYW5oI3pKLp3XjpYg==" crossorigin="anonymous" />
+    <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml">
+
+
+     <!-- Incluir FullCalendar -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.10.2/fullcalendar.min.css" integrity="sha512-lMF1XGm3cHcFG1l6nir2LRf5r3D0qsKmUNpaJbEZHHARyG+Yb+AfiPfGqrKE5JbQj7KxLobIfz6Vf2Ht+9qFAg==" crossorigin="anonymous" />
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js" integrity="sha512-fFTYHA3DDIlDykH9cenuX6tSfzSa+HJmhr+RTZ0jr6f0jH9B8G32ix4qJ7YjDH/0zjTDlHt+l1sTlM0dd8CN6w==" crossorigin="anonymous"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.10.2/fullcalendar.min.js" integrity="sha512-OmdBldPw8+k+9W4Sk4xsIbR06YBnrwkT4n+UX9+S5b9bqU3p2uIcpOqQdmK8+AD1m1bX+D2P72X9d1HZkaUBkQ==" crossorigin="anonymous"></script>
+    <!-- Styles -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/fontawesome-all.css" rel="stylesheet">
+	<link href="css/styles.css" rel="stylesheet">
+	
+	<!-- Favicon  -->
+   <!-- <link rel="icon" href="images/logo.svg">--
+</head>
+<body data-spy="scroll" data-target=".fixed-top">
+    
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
+        <div class="container">
+            
+            <!-- Image Logo -->
+           <!-- <a class="navbar-brand logo-image" href="index.html"><img src="images/logo.svg" alt="alternative"></a>  -->
+             <a class="navbar-brand text-decoration-none" href="index.html"><h1 class="navbar-expand text-white">DEV <span class="" style="color: blue;">WEB</span> </h1></a>  
+            <!-- Text Logo - Use this if you don't have a graphic logo -->
+            <!-- <a class="navbar-brand logo-text page-scroll" href="index.html">Mark</a> -->
+
+            <button class="navbar-toggler p-0 border-0" type="button" data-toggle="offcanvas">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link  page-scroll effect-hover smooth-scroll" href="#header">Inicio <span class="sr-only">(actual)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll effect-hoverl smooth-scroll" href="#about">Acerca de</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll effect-hover smooth-scroll" href="#services">Servicios</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll effect-hover smooth-scroll" href="#contact">Contacto</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle effect-hover smooth-scroll" href="#" id="aprendeDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Aprende
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="aprendeDropdown">
+                            <a class="dropdown-item" href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">HTML</a>
+                            <a class="dropdown-item" href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank">CSS</a>
+                            <a class="dropdown-item" href="https://laravel.com/docs" target="_blank">Laravel</a>
+                            <a class="dropdown-item" href="https://www.php.net/docs.php" target="_blank">PHP</a>
+                            <a class="dropdown-item" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">JavaScript</a>
+                            <a class="dropdown-item" href="https://getbootstrap.com/docs/4.6/getting-started/introduction/" target="_blank">Bootstrap</a>
+
+                            <!-- Puedes agregar más enlaces según sea necesario -->
+                        </div>
+                    </li>
+                    
+                </ul>
+                <span class="nav-item social-icons">
+                    <span class="fa-stack">
+                        <a href="https://wa.me/50585429144?text=Hola%20si%20quieres%20consultar%20sobre%20mis%20servicios%20escríbeme"  target="_blank">
+                            <i class="fas fa-circle fa-stack-2x"></i>
+                            <i class=" fab fa-whatsapp fa-stack-1x"></i>
+                        </a>
+                    </span>
+                    
+                </span>
+            </div> <!-- fin de navbar-collapse -->
+          </div> <!-- fin de container -->
+          </nav> <!-- fin de navbar -->
+            <!-- fin de navegación -->
+            
+            
+            <!-- Encabezado -->
+            <header id="header" class="header" id="header">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="text-container">
+                                <h1 class="h1-large">Me encanta crear sitios web hermosos y eficientes</h1>
+                                <a class="btn-solid-lg page-scroll" href="#about">Descubrir</a>
+                                <a class="btn-outline-lg page-scroll" href="#contact"><i class="fas fa-user"></i>Contactarme</a>
+                            </div> <!-- fin de text-container -->
+                        </div> <!-- fin de col -->
+                    </div> <!-- fin de row -->
+                </div> <!-- fin de container -->
+            </header> <!-- fin de header -->
+            <!-- fin de header -->
+            
+
+
+    <!-- Acerca de -->
+<div id="about" class="basic-1 bg-gray">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="text-container first">
+                    <h2>¡Hola! Soy Carlos,</h2>
+                    <p>Un apasionado desarrollador web con habilidades destacadas en la creación de experiencias digitales impactantes y funcionales. Mi enfoque se centra en el diseño y desarrollo de sitios, sistemas web modernos y adaptables, que garantizan una experiencia de usuario excepcional en todos los dispositivos.</p>
+                </div> <!-- fin de text-container -->
+            </div> <!-- fin de col -->
+            <div class="col-lg-4">
+                <div class="text-container second">
+                    <div class="time">2021 - PRESENTE</div>
+                    <h6>Estudios</h6>
+                    <p>Ingeniería en tecnologías de la información con énfasis en desarrollo web y marketing digital.</p>
+                    <div class="time">2023 - 2023</div>
+                    <h6>Colaboracion en proyectos web </h6>
+                    <p>Aprove : sitio web para el aprendizaje educativo en linea.</p>
+                </div> <!-- fin de text-container -->
+            </div> <!-- fin de col -->
+            <div class="col-lg-4">
+                <div class="text-container third">
+                    <div class="time">2022 - 2022</div>
+                    <h6>Certificacion</h6>
+                    <p>Certificado en fundamentos de la ciberseguridad.</p>
+                    <div class="time">2024 - PRESENTE</div>
+                    <h6>Estudios</h6>
+                    <p>Desarrollo web con React y React Native. </p>
+                </div> <!-- fin de text-container -->
+            </div> <!-- fin de col -->
+        </div> <!-- fin de row -->
+    </div> <!-- fin de container -->
+</div> <!-- fin de basic-1 -->
+<!-- fin de about -->
+
+
+<!-- Servicios -->
+<div id="services" class="basic-2">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+               <p class="p-heading" style="margin-top: -60px;"><a class=" text-center text-info  " href="apiproduct.html" target="_blank">
+                Conoce la API de Productos: Fácil, Rápido y Divertido</a></p> 
+                <h2 class="h2-heading">Servicios ofrecidos</h2>
+                <p class="p-heading">El diseño y desarrollo web han sido parte fundamental de mi día a día desde hace dos años. A lo largo de este tiempo, he encontrado que puedo brindar mi experiencia para ayudar a startups y empresas ofreciendo los siguientes servicios:</p>
+              
+            </div> <!-- fin de col -->
+        </div> <!-- fin de row -->
+       <!-- Agrega la clase "interactive-card" a tus tarjetas -->
+<div class="row">
+    <div class="col-lg-4 interactive-card">
+        <div class="text-box">
+            <i class="far fa-gem"></i>
+            <h4>DISEÑO</h4>
+            <p>Los proyectos en línea exitosos comienzan con un buen diseño. Establece una base sólida para el desarrollo futuro y permite un crecimiento a largo plazo.</p>
+        </div> <!-- fin de text-box -->
+    </div> <!-- fin de col -->
+    <div class="col-lg-4 interactive-card">
+        <div class="text-box">
+            <i class="fas fa-code"></i>
+            <h4>DESARROLLO</h4>
+            <p>Puedo codificar mis propios diseños o incluso utilizar el diseño del cliente como base. Mi enfoque es generar un código limpio y bien estructurado para garantizar la confiabilidad.</p>
+        </div> <!-- fin de text-box -->
+    </div> <!-- fin de col -->
+    <div class="col-lg-4 interactive-card">
+        <div class="text-box">
+            <i class="fas fa-tv"></i>
+            <h4>SEO BÁSICO</h4>
+            <p>Puedo configurar tu proyecto para utilizar principios básicos de SEO que impulsarán tu proyecto a la primera página en los motores de búsqueda y te ahorrarán dinero en publicidad.</p>
+        </div> <!-- fin de text-box -->
+    </div> <!-- fin de col -->
+</div>
+
+<!-- CSS para las transiciones y estilos al pasar el ratón -->
+<style>
+    .interactive-card {
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .interactive-card:hover {
+        transform: scale(1.1);
+    }
+</style>
+
+    </div> <!-- fin de container -->
+</div> <!-- fin de basic-2 -->
+<!-- fin de services -->
+
+
+
+    <!-- Details -->
+	<div class="split">
+		<div class="area-1">
+		</div><!-- end of area-1 on same line and no space between comments to eliminate margin white space --><div class="area-2 bg-gray">
+            <div class="container">    
+                <div class="row">
+                    <div class="col-lg-12">     
+                        
+                        <!-- Text Container -->
+                        <div class="text-container">
+                            <h2>Experiencia en Desarrollo</h2>
+                            <p>Mi experiencia se centra en el desarrollo de sistemas web utilizando el poderoso framework Laravel. He participado en proyectos 
+                                que van desde sitios web informativos hasta sistemas o  aplicaciones empresariales. Siempre me esfuerzo por mantener altos estándares 
+                                de calidad y seguir buenas prácticas de codificación.</p>
+                           
+                            <h5>Habilidades Técnicas</h5>
+                            <p> •	HTML y CSS: Creación de interfaces atractivas y accesibles. <br>
+                                •	PHP y Laravel: Desarrollo de aplicaciones robustas y escalables.<br>
+                                •	Bases de Datos: Experiencia sólida en MySQL y PostgreSQL.<br>
+                                •	Responsive Design: Diseño de sitios web que se adaptan perfectamente a diferentes dispositivos.<br>
+                                •   JavaScrip :  Desarrollo de funcionalidades interactivas en el lado del cliente.<br>
+                                •   Bootstrap: Utilización del framework Bootstrap para un desarrollo ágil y responsivo.
+                            </p><br>
+                                     
+                                </p>
+                            <div class="icons-container">
+                                <img style="max-width: 100px;" src="images/laravel2.png" alt="alternative">
+                                <img src="images/php2.png" alt="alternative">
+                                <img src="images/details-icon-html.png" alt="alternative">
+                                <img src="images/details-icon-css.png" alt="alternative">
+                                <img src="images/details-icon-bootstrap.png" alt="alternative">
+                                <img src="images/details-icon-javascript.png" alt="alternative">
+                            </div> <!-- end of icons-container -->
+                        </div> <!-- end of text-container -->
+                        <!-- end of text container -->
+
+                    </div> <!-- end of col -->
+                </div> <!-- end of row -->
+            </div> <!-- end of container -->
+		</div> <!-- end of area-2 -->
+    </div> <!-- end of split -->
+    <!-- end of details -->
+
+
+    <!-- Projects -->
+   <!-- Proyectos entregados -->
+<div id="projects" class="basic-3">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <h2 class="h2-heading">Proyectos en Desarrollo</h2>
+                <p class="p-heading">A continuación, te muestro algunos de los proyectos  en los que estoy trabajado. Van desde el diseño web básico para sitios de presentación hasta el desarrollo sistemas  web avanzado para empresas .</p>
+            </div> <!-- fin de col -->
+        </div> <!-- fin de row -->
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="text-container">
+                    <div class="image-container">
+                        <a href="project.html">
+                            <img class="img-fluid" src="images/caps2.png" alt="alternativa">
+                        </a>
+                    </div> <!-- fin de image-container -->
+                    <p><strong>Sistema Administrativo de Servicios de Agua. </strong> <br>
+                         El sistema administrativo de servicios de agua es una solución integral diseñada para abordar las complejas necesidades de gestión en el sector de servicios de agua. 
+                            Su propósito principal es optimizar y simplificar los procesos operativos relacionados con la administración y provisión de servicios de agua. Este sistema ofrece funcionalidades avanzadas que mejoran la eficiencia,
+                             la toma de decisiones y la experiencia general de gestión.</p>
+                </div> <!-- fin de text-container -->
+                <!-- Resto de los proyectos... -->
+            </div> <!-- fin de col -->
+        </div> <!-- fin de row -->
+    </div> <!-- fin de container -->
+</div> <!-- fin de basic-3 -->
+<!-- fin de projects -->
+
+
+<!-- Trabajos -->
+<div class="basic-4">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="text-container">
+                    <div class="image-container">
+                        <a href="terms.html">
+                            <img class="img-fluid" src="images/planeta.png" alt="alternativa">
+                        </a>
+                    </div> <!-- fin de image-container -->
+                    <p><strong></strong> <strong>Planeta Verde</strong> <br>
+                        Planeta Verde es un blog informativo dedicado a la exploración y conciencia sobre el medio ambiente.
+                         Este proyecto tiene como objetivo principal proporcionar información detallada y educativa sobre diversos temas relacionados con nuestro planeta, incluyendo ríos, recursos humanos, contaminación ambiental y más. 
+                        La plataforma se ha diseñado para ser una fuente confiable y accesible de conocimientos ambientales.</p>
+                </div> <!-- fin de text-container -->
+            </div> <!-- fin de col -->
+            <!-- Resto de los trabajos... -->
+        </div> <!-- fin de row -->
+    </div> <!-- fin de container -->
+</div> <!-- fin de basic-4 -->
+<!-- fin de works -->
+
+
+
+    <!-- Section Divider -->
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <hr class="section-divider">
+                <div class="tooltip-container notificaion">
+                    <span id="tooltipp">¡Te gusta el Desarrollado Web! Aprende HTML Básico <a href="aprediendohtml.html" style="list-style: none;">Aqui</a> </span>
+                  </div>
+                  
+            </div> <!-- end of col -->
+        </div> <!-- end of row -->
+    </div> <!-- end of container -->
+    <!-- end of section divider -->
+
+
+   <!-- Preguntas frecuentes -->
+<div class="accordion-1">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <h2 class="h2-heading">Preguntas frecuentes</h2>
+            </div> <!-- end of col -->
+        </div> <!-- end of row -->
+        <div class="row">
+            <div class="col-lg-12">
+
+                <div class="accordion" id="accordionExample">
+                    <div class="card">
+                        <div class="card-header" id="headingOne">
+                            <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                ¿Cómo puedo contactarte y obtener rápidamente un presupuesto para mi proyecto en línea?
+                            </button>
+                        </div>
+                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                            <div class="card-body">
+                                La mejor manera de contactarme es a través del formulario de contacto o enviándome un mensaje en mis cuentas de redes sociales especialmente en whatsapp . Para obtener un presupuesto rápido, asegúrate de proporcionar muchos detalles sobre tu proyecto.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingTwo">
+                            <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                ¿Creas diseños desde cero o utilizas temas predefinidos?
+                            </button>
+                        </div>
+                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                            <div class="card-body">
+                                Creo diseños personalizados desde cero para cada proyecto. Mi enfoque es brindar soluciones únicas y adaptadas a las necesidades específicas de cada cliente.
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <div class="card-header" id="headingThree">
+                            <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                ¿Recibiré algún mantenimiento o garantía incluidos después de la entrega del proyecto?
+                            </button>
+                        </div>
+                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                            <div class="card-body">
+                                Sí, después de la entrega del proyecto, proporciono servicios de mantenimiento y garantía para asegurar el rendimiento continuo y abordar cualquier problema que pueda surgir.
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <div class="card-header" id="headingFour">
+                            <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                ¿Si algo sale mal con el proyecto, puedo recuperar mi dinero?
+                            </button>
+                        </div>
+                        <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+                            <div class="card-body">
+                                Mi objetivo es garantizar la satisfacción del cliente. Si algo no cumple con tus expectativas, trabajaremos juntos para encontrar soluciones. La política de reembolso dependerá de la situación específica.
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <div class="card-header" id="headingFive">
+                            <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                ¿Cuál es tu método de pago preferido y necesitas un anticipo?
+                            </button>
+                        </div>
+                        <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
+                            <div class="card-body">
+                                Puedes realizar el pago de nuestros servicios de dos maneras:
+                                <ul>
+                                    <li><strong>Pago con Tarjeta:</strong> Aceptamos pagos seguros mediante tarjeta de crédito o débito.</li>
+                                    <li><strong>Pago en Efectivo:</strong> También puedes optar por el pago en efectivo.</li>
+                                </ul>
+                                Para obtener un presupuesto rápido, asegúrate de proporcionar muchos detalles sobre tu proyecto.
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                </div> <!-- end of accordion -->
+
+            </div> <!-- end of col -->
+        </div> <!-- end of row -->
+    </div> <!-- end of container -->
+</div> <!-- end of accordion-1 -->
+<!-- end of questions -->
+
+
+<!-- Contacto -->
+<div id="contact" class="form-1 bg-gray">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <h2>Detalles de contacto</h2>
+                <p class="p-heading">Para cualquier tipo de proyecto en línea, no dudes en ponerte en contacto conmigo. </p>
+            </div> <!-- end of col -->
+        </div> <!-- end of row -->
+        <div class="row">
+            <div class="col-lg-12">
+                <style>
+                    .responsive-iframe-container {
+                        overflow: hidden;
+                        padding-bottom: 75%;  /* Proporción aspecto (ajusta según tus necesidades) */
+                        position: relative;
+                        height: 0;
+                    }
+                
+                    .responsive-iframe-container iframe {
+                        left: 0;
+                        top: 0;
+                        height: 100%;
+                        width: 100%;
+                        position: absolute;
+                    }
+                </style>
+                
+                <div class="responsive-iframe-container">
+                    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSc52Awo-045OeCMS6r5BwV_Dmox4pXE_AKeCSWwqvv8tdoRew/viewform?embedded=true" 
+                            frameborder="0" 
+                            marginheight="0" 
+                            marginwidth="0">
+                        Cargando…
+                    </iframe>
+                </div>
+                
+    
+                <div class="icons-container">
+                    <i class="fab fa-laravel fa-2x text-danger"></i>
+                    <i class="fab fa-php fa-2x text-primary" ></i>
+                    <i class="fab fa-html5 fa-2x text-" style="color:orangered"></i>
+                    <i class="fab fa-css3 fa-2x" style="color:darkblue"></i>
+                    <i class="fab fa-bootstrap fa-2x " style="color:dodgerblue"></i>
+                    <i class="fab fa-js fa-2x" style="color:gold"></i>
+                </div> <!-- end of icons-container -->
+                
+            </div> <!-- end of col -->
+        </div> <!-- end of row -->
+    </div> <!-- end of container -->
+</div> <!-- end of form-1 -->
+<!-- end of contact -->
+
+
+    <!-- Footer -->
+    <div class="footer bg-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="social-container">
+                        <span class="fa-stack">
+                            <a href="https://wa.me/50585429144?text=Hola%20si%20quieres%20consultar%20sobre%20mis%20servicios%20escríbeme"  target="_blank">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class=" fab fa-whatsapp fa-stack-1x"></i>
+                            </a>
+                        </span>
+                       
+                        <span class="fa-stack">
+                            <a href="https://www.linkedin.com/in/carlos-alvarez-422512266/" target="_blank">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class=" fab fa-linkedin fa-stack-1x"></i>
+                            </a>
+                        </span>
+                        <span class="fa-stack">
+                            <a href="https://www.instagram.com/walnerweb/" target="_blank">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-instagram fa-stack-1x"></i>
+                            </a>
+                        </span>
+                        <span class="fa-stack">
+                            <a href="https://www.youtube.com/channel/UC8EUa1LUJNudI7PJDS7oU-w" target="_blank">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-youtube fa-stack-1x"></i>
+                            </a>
+                        </span>
+                    </div> <!-- end of social-container -->
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of footer -->  
+    <!-- end of footer -->
+
+
+   
+    <!-- Copyright -->
+    <div class="copyright bg-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <p class="p-small">Copyright © <a class="no-line" href="#your-link">
+                        <h6 class="navbar-expand text-white">DEV <span class="" style="color: blue;">WEB</span> </h6>
+                    </a></p>
+                </div> <!-- end of col -->
+            </div> <!-- enf of row -->
+        </div> <!-- end of container -->
+
+       
+        
+    </div> <!-- end of copyright --> 
+    <!-- end of copyright -->
+    
+    	
+    <!-- Scripts -->
+   
+    <script src="js/jquery.min.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
+    <script src="js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
+    <script src="js/jquery.easing.min.js"></script> <!-- jQuery Easing for smooth scrolling between anchors -->
+    <script src="js/scripts.js"></script> <!-- Custom scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/izitoast@1.4.0/dist/js/iziToast.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-xFMX6BSaXjRRV7Uv9U6Zil0r3c+SWEl6S/jmNOViVVd1CgY5JTosXtXGnz1kaReI3yGowT51CHBlUHC+yjH8dzA==" crossorigin="anonymous"></script>
+<script>
+    /*// Esta función se ejecutará cuando se cargue la página
+    document.addEventListener("DOMContentLoaded", function () {
+        // Configuración de la notificación
+        iziToast.show({
+            title: '¡Desarrollador Web!',
+            message: '  <a href="apiproduct.html" style="list-style: none;">Prueba nuestra API RESTful de productos</a> ',
+          
+            timeout: 5000,  // Tiempo en milisegundos que la notificación estará visible (puedes ajustar esto)
+            position: 'topCenter',  // Posición en la que aparecerá la notificación
+            theme: 'dark',  // Puedes cambiar el tema según tus preferencias
+        });
+    });*/
+
+</script>
+
+
+</body>
+</html>
